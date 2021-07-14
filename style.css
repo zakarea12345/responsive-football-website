@@ -23,9 +23,7 @@
     height: 677px;
     margin-bottom: 70px;
  }
- /* .header-title{
-     margin-left:156px ;
- } */
+
  .header-title h1{
     font-size: 64px;
     color: white;
@@ -151,5 +149,140 @@
  footer p{
     font-size: 18px;
     line-height: 24px;
- }
+}
  
+ /*-------- 
+ media quries
+ ------------  */
+ /* mobile-devices */
+ @media only screen and (max-width:688px) {
+
+     .header-container header{
+    background-color:#2D25A0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 70px;
+ }
+ .header-title h1{
+    font-size: 40px;
+    color: white;
+ }
+ .btn{
+    background-color:#E02C6D;
+    width: 90px;
+   height: 30px;
+   border: none;
+    
+}
+.header-banner img{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+ }
+ .top-players{
+    width: 100%;
+    margin:40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+.player{
+   padding: 15px;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+   width: 100%;
+}
+.player h1{
+    font-size: 28px;
+}
+.player p{
+    font-size: 16px;
+}
+.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 184px;
+}
+
+.highlight-details{
+   width: 80%;
+   height: 70%;
+}
+.highlight-details h1{
+    text-align: center;
+}
+.highlight-details p{
+    font-size: 14px;
+}
+.highlight-details .btn{
+    margin-left: 35%;
+}
+.highlight-image img{
+   width: 70%;
+   height: 70%;
+   margin-top: 40px;
+}
+.sponsers-container h1{
+    font-size: 60px;
+    text-align: center;
+}
+.sponsers{
+    grid-template-columns: 1fr;
+ }
+ .sponsers img{
+     margin-left: 25%;
+ }
+.footer-image img{
+    height: 70%;
+    width: 70%;
+}
+}
+/* TABLET DEVICES */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .header-container header{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+     }
+    
+     .top-players{
+        width: 100%;
+        margin:40px auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .highlight{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 184px;
+        margin-left: 20%;
+    }
+    
+    .highlight-details{
+       width: 50%;
+       height: 50%;
+    }
+    .highlight-image img{
+       width: 80%;
+       height: 50%;
+       margin-top: 40px;
+    }
+
+    .sponsers{
+        grid-template-columns:1fr 1fr;
+     }
+     .sponsers img{
+         margin-left: 20%
+     };
+    
+    .footer-image img{
+        width:100%;
+    }
+    
+}
