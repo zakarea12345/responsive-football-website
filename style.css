@@ -119,6 +119,9 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
  }
+ .sponsers img{
+     margin-left: 20%;
+ }
  /* footer styles */
  footer{
      display: flex;
